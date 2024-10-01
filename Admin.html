@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="firebase.js"></script> 
+    <script src="script.js"></script> 
+</head>
+<body>
+
+    <h1>Admin Dashboard</h1>
+
+    <div id="admin-login">
+        <h2>Admin Login</h2>
+        <input type="email" id="admin-email" placeholder="Email">
+        <input type="password" id="admin-password" placeholder="Password">
+        <button onclick="loginAdmin()">Login</button>
+    </div>
+
+    <div id="admin-actions" style="display:none;">
+        <h2>Post Soil Details</h2>
+        <textarea id="soil-details" placeholder="Enter soil details"></textarea>
+        <button onclick="postSoilDetails()">Post Soil Details</button>
+
+        <h2>Post Distributor Details</h2>
+        <textarea id="distributor-details" placeholder="Enter distributor details"></textarea>
+        <button onclick="postDistributorDetails()">Post Distributor Details</button>
+    </div>
+
+</body>
+</html>
